@@ -1,8 +1,8 @@
 
 const twilio = require('twilio');
 
-const accountSid = 'AC5999f48e92da6b428d8f5f8f96dfaf89'; 
-const authToken = '79b07cd0c9c6900f8ed2a669bb5d4a01';    
+const accountSid = 'AC59xxxxxxxx'; 
+const authToken = '7xxxxxxx';    
 
 const client = twilio(accountSid, authToken);
 
@@ -10,8 +10,8 @@ const client = twilio(accountSid, authToken);
 client.messages
   .create({
     body: 'Hello from ecofleet!',      
-    from: '+12512202603',              
-    to: '+918865037375'                 // The recipient's phone number
+    from: '+1xxxxxxx3',              
+    to: '+91xxxxxxx'                 // The recipient's phone number
   })
   .then(message => console.log(`Message sent with SID: ${message.sid}`))
   .catch(error => console.error(error));
